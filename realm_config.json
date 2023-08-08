@@ -1,0 +1,8 @@
+{
+    "app_id": "test-app-migration-dev-gvdlj",
+    "config_version": 20210101,
+    "name": "test-app-migration-dev",
+    "location": "US-VA",
+    "provider_region": "azure-eastus2",
+    "deployment_model": "LOCAL"
+}
