@@ -1,0 +1,21 @@
+name: Promote App
+
+# Controls when the action will run.
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deploy To'
+        required: true
+        type: choice
+        options:
+          - dev
+          - stage
+          - prod
+      app_id:
+        description: 'Atlas MongoDB App id'
+        required: true
+        type: string
+env:
+  DEPLOY_ENV_NAME: ${{ inputs.environment }}
+  APP_ID: ${{ inputs.environment }}
