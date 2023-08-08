@@ -21,7 +21,7 @@ env:
   APP_ID: ${{ inputs.environment }}
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
