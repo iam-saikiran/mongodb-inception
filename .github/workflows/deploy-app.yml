@@ -1,4 +1,4 @@
-name: Promote App
+name: Deploy App
 
 # Controls when the action will run.
 on:
@@ -19,3 +19,14 @@ on:
 env:
   DEPLOY_ENV_NAME: ${{ inputs.environment }}
   APP_ID: ${{ inputs.environment }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build artifact
+        run: echo built-artifact
+
+      - name: realmcli import app to env
+        run: echo 'import app to env'
